@@ -1,0 +1,192 @@
+<!DOCTYPE HTML>
+<html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/styles.css">
+            <title>Technical Documentation</title>
+      </head>
+      <body>
+            <!--Nav bar section start here-->
+            <nav id="navbar">
+                  <header>CSS Documentation</header>
+                  <a href="#introduction" class="nav-link">Introduction</a>
+                  <a href="#selectors" class="nav-link">Selectors</a>
+                  <a href="#box-model" class="nav-link">Box Model</a>
+                  <a href="#grid-layout" class="nav-link">Grid Layout</a>
+                  <a href="#flex-box" class="nav-link">Flexbox</a>
+                  <a href="#responsive-design" class="nav-link">Responsive Design</a>
+                  <a href="#reference" class="nav-link">Reference</a>
+            </nav>
+            <!--Nav bar section ends here-->
+
+            <!--main section start here-->
+            <main id="main-doc">
+
+                  <!--Introduction section begins here-->
+                  <section class="main-section" id="introduction">
+                        <header>Introduction</header>
+                        <p>Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.</p>
+
+                        <p>CSS is among the core languages of the open web and is standardized across Web browsers according to W3C specifications. Previously, the development of various parts of CSS specification was done synchronously, which allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.</p>
+                  </section>
+                  <!--Introduction section ends here-->
+
+                  <!--Selectors section ends here-->
+                  <section class="main-section" id="selectors">
+                        <header>Selectors</header>
+                        <p>Selectors are patterns used to select and style HTML elements in CSS. They allow you to target specific elements based on their type, class, ID, attributes, or relationship with other elements. To get started using selectors to style a web page, first open an editor like vscode and write few lines of html code.</p>
+
+                        <p>Here is how selectors works</p>
+                        <div class="code-block">
+                              <code>
+                                    Selecting all paragraphs<br> 
+                                    p { 
+                                    color: blue; 
+                                    } <br> 
+                                    Selecting elements with class "highlight"<br> 
+                                    .highlight { 
+                                    background-color: yellow; 
+                                    } <br> 
+                                    Selecting elements with ID "header"<br> 
+                                    #header { 
+                                    font-size: 24px; 
+                                    } 
+                              </code>
+                        </div>
+                  </section>
+                  <!--Introduction section ends here-->
+
+                  <!--Box Model section starts here-->
+                  <section class="main-section" id="box-model">
+                        <header>Box Model</header>
+                        <p>The box model is a fundamental concept in CSS that describes how elements are laid out on a web page. It consists of four parts: content, padding, border, and margin. Understanding the box model is crucial for accurately positioning and sizing elements on a webpage.</p>
+
+                        <ul>
+                              <li>
+                                    <strong>Content</strong>: The content area is the innermost part of the box and holds the actual content, such as text, images, or other media. It is defined by the width and height properties.
+                               </li>
+                              <li>
+                                    <strong>Padding</strong>: Padding is the space between the content area and the border of the box. It provides space inside the element to add visual breathing room or separation between the content and the border. Padding can be specified using the padding property and its shorthand properties like padding-top, padding-right, padding-bottom, and padding-left. </li>
+                              <li>
+                                    <strong>Border</strong>: The border surrounds the padding and content areas and defines the boundary of the box. Borders can be solid, dashed, dotted, or have other styles, and they can have different thicknesses. You can specify the border using properties like border, border-width, border-style, border-color, and their respective shorthand properties. 
+                              </li>
+                              <li>
+                                    <strong>Margin</strong>: Margin is the space outside the border of the box and provides separation between elements. It determines the distance between the current element and its neighboring elements. Margins can be specified using the margin property and its shorthand properties like margin-top, margin-right, margin-bottom, and margin-left. 
+                              </li>
+                        </ul>
+                        <p>Here is how to styling the box model components</p>
+                        <div class="code-block">
+                              <code>
+                                    .box { 
+                                          width: 200px; <br> 
+                                          height: 100px; <br> 
+                                          padding: 20px; <br> 
+                                          border: 2px solid black; <br> 
+                                          margin: 10px; <br> 
+                                          } 
+                              </code>
+                        </div>
+                  </section>
+                  <!--Box Model section ends here-->
+
+                  <!--Grid layout section starts here-->
+                  <section class="main-section" id="grid-layout">
+                        <header>Grid Layout</header>
+                        <p>
+                              Grid Layout is another layout model in CSS that enables you to create grid-based layouts with rows and columns. It allows for precise control over the placement and sizing of elements, making it ideal for designing complex and responsive web layouts.
+                        </p>
+                        <ul>
+                              <li>
+                                    <strong>Grid Container</strong>: To use grid layout, you first need to define a grid container, which is an element that serves as the parent container for the grid. You can create a grid container by applying display: grid; or display: inline-grid; to an element in your HTML document.
+                              </li>
+                              <li>
+                                    <strong>Grid-Item</strong>: Grid items are the child elements of the grid container that are placed within the grid. You can position grid items within the grid using line-based placement (specifying starting and ending grid lines) or named grid areas. Grid items can span multiple rows or columns and can be positioned in specific areas of the grid
+                              </li>
+                              <li>
+                                    <strong>Grid Lines</strong>: Grid lines are the horizontal and vertical lines that divide the grid into rows and columns. Grid lines are numbered starting from 1 and can be referenced to position grid items within the grid.
+                              </li>
+                              <li>
+                                    <strong>Grid Gaps</strong>: Grid gaps are the spaces between grid tracks (rows and columns). You can specify the size of grid gaps using the grid-row-gap and grid-column-gap properties, or use the shorthand grid-gap property to set both row and column gaps simultaneously
+                              </li>
+                              <li>
+                                    <strong>Grid Areas</strong>: Grid areas are rectangular areas of the grid defined by the intersection of specific rows and columns. You can assign names to grid areas and position grid items within these areas using the grid-area property.
+                              </li>
+                        </ul>
+                        <p>Here is how to styling components using grid layout:</p>
+                        <div class="code-block">
+                              <code>
+                                    
+                                    /* Creating a grid container */<br> 
+                                    .grid-container { 
+                                    display: grid; 
+                                    grid-template-columns: 1fr 1fr 1fr; 
+                                    grid-gap: 10px; 
+                                    } <br>
+
+                                    /* Styling grid items */<br> 
+                                    .grid-item { 
+                                    background-color: lightgray; 
+                                    padding: 20px; 
+                                    } 
+                              </code>
+                        </div>
+                  </section>
+                  <!--Grid layout section ends here-->
+
+                  <!--Flexbox section starts here-->
+                  <section class="main-section" id="flex-box">
+                        <header>Flexbox</header>
+                        <p>Flexbox is a layout model in CSS designed for building flexible and responsive layouts. It provides a more efficient way to distribute space and align items within a container, making it easier to create complex layouts with fewer lines of code.
+                        </p>
+                        <p>Here is how the flexbox works: </p>
+                        <div class="code-block">
+                              <code>
+                                    /* Creating a flex container */ <br> 
+                                    .flex-container { <br>
+                                    display: flex;<br> 
+                                    justify-content: space-between;<br> 
+                                    } <br>
+                                    /* Styling flex items */<br> 
+                                    .flex-item {<br> 
+                                    flex-grow: 1;
+                                    }
+                              </code>
+                        </div>
+                  </section>
+                  <!--Flexbox section ends here-->
+
+                  <!--Responsive design section start here-->
+                  <section class="main-section" id="responsive-design">
+                        <header>Responsive Design</header>
+                        <p>
+                              Responsive design is an approach to web design that ensures web pages look good and function well on various devices and screen sizes, from large desktop monitors to small smartphones. It involves using CSS media queries, flexible layouts, and fluid images to adapt the layout and content based on the device's screen size and orientation. 
+                        </p>
+                        <p>Here is how responsiveness works: </p>
+                        <div class="code-block">
+                              <code>
+                                    /* Using media queries to adjust layout for smaller screens */<br> 
+                                    @media screen and (max-width: 768px) { <br> 
+                                    .container { 
+                                    flex-direction: column;<br> /* Stack items vertically */ 
+                                    }<br> 
+                                    }
+                              </code>
+                        </div>
+                  </section>
+                  <!--Responsive design section ends here-->
+
+                  <!--Reference section start here-->
+                  <section class="main-section" id="reference">
+                        <header>Reference</header>
+                        <p>
+                              All the documentation in this page is taken from
+                              <a href="http://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank" >MDN</a>
+                        </p>
+                  </section>
+                  <!--Reference section ends here-->
+            </main>
+            <!--main section ends here-->
+            <footer>Designed by iametor</footer>
+      </body>
+</html>
